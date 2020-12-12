@@ -12,7 +12,7 @@ pipeline {
             }
         }
         stage('build') {
-            steps 
+            steps {
                 sh 'go build'
             }
         }
