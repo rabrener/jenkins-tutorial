@@ -7,7 +7,7 @@ pipeline {
             }
         }
         stage('env') {
-            steps 
+            steps {
                 sh 'go env'
             }
         }
