@@ -6,9 +6,14 @@ pipeline {
                 sh 'go version'
             }
         }
-        stage('run') {
-            steps {
-                sh 'go run main.go'
+        stage('env') {
+            steps 
+                sh 'go env'
+            }
+        }
+        stage('build') {
+            steps 
+                sh 'go build'
             }
         }
     }
