@@ -1,5 +1,8 @@
 pipeline {
     agent { docker { image 'golang' } }
+    environment {
+        GOCACHE = "/"
+    }
     stages {
         stage('version') {
             steps {
